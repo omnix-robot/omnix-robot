@@ -34,18 +34,6 @@ def sketch_data_uri() -> tuple[str, int, int]:
     return "data:image/webp;base64," + base64.b64encode(raw).decode(), w, h
 
 
-def pencil(x0, x1, y, seed, amp=0.9, color=INK, op=0.55, w=1.0):
-    """略带抖动的铅笔线。"""
-    import random
-    r = random.Random(seed)
-    pts, x = [], x0
-    while x < x1:
-        pts.append(f"{x:.1f},{y + r.uniform(-amp, amp):.1f}")
-        x += r.uniform(18, 34)
-    pts.append(f"{x1:.1f},{y:.1f}")
-    return f'<polyline points="{" ".join(pts)}" fill="none" stroke="{color}" stroke-opacity="{op}" stroke-width="{w}" stroke-linecap="round" stroke-linejoin="round"/>'
-
-
 def hero() -> str:
     W, H = 1280, 560
     PAPER, SUB = "#f3f3ef", "#6b7275"
