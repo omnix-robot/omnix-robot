@@ -35,27 +35,35 @@ def sketch_data_uri() -> tuple[str, int, int]:
 
 
 def hero() -> str:
-    W, H = 1280, 560
+    W, H = 1280, 440
     PAPER, SUB = "#f3f3ef", "#6b7275"
     uri, iw, ih = sketch_data_uri()
-    disp_w = 760
-    disp_h = ih * disp_w / iw
-    ix, iy = W - disp_w - 24, (H - disp_h) / 2 + 6
+    # 素描放大铺满右半边（原图四周自带留白，允许少量出血）
+    disp_h = 470
+    disp_w = iw * disp_h / ih
+    ix, iy = W - disp_w + 10, (H - disp_h) / 2 + 8
+
+    # 左侧文字块：整体垂直居中
     s = 200 / 3898
+    logo_h = 2005 * s
+    block_h = logo_h + 222  # logo 顶 → 英文标语基线
+    x0, y0 = 88, (H - block_h) / 2 + 4
+    t1, t2 = y0 + logo_h + 76, y0 + logo_h + 136
+    ul, en = t2 + 20, t2 + 58
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="OMNI-X 全为具身：为物理 AI 打造硬件与数据">
 <defs><clipPath id="card"><rect width="{W}" height="{H}" rx="16"/></clipPath></defs>
 <g clip-path="url(#card)">
 <rect width="{W}" height="{H}" fill="{PAPER}"/>
-<image x="{ix:.1f}" y="{iy:.1f}" width="{disp_w}" height="{disp_h:.1f}" xlink:href="{uri}" href="{uri}"/>
-<g transform="translate(72,62) scale({s:.5f})">
+<image x="{ix:.1f}" y="{iy:.1f}" width="{disp_w:.1f}" height="{disp_h}" xlink:href="{uri}" href="{uri}"/>
+<g transform="translate({x0},{y0:.1f}) scale({s:.5f})">
 {logo_paths(INK)}
 </g>
-<line x1="290" y1="96" x2="290" y2="128" stroke="{INK}" stroke-opacity="0.25"/>
-<text x="306" y="119" font-family="{FONT}" font-size="17" fill="{INK}" fill-opacity="0.8" letter-spacing="4">全为具身</text>
-<text x="72" y="240" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">为物理 AI</text>
-<text x="72" y="300" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">打造硬件与数据</text>
-<line x1="74" y1="318" x2="236" y2="318" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round"/>
-<text x="74" y="356" font-family="{FONT}" font-size="17" fill="{SUB}" letter-spacing="0.5">Hardware &amp; Data for Physical AI</text>
+<line x1="{x0+218}" y1="{y0+34:.1f}" x2="{x0+218}" y2="{y0+66:.1f}" stroke="{INK}" stroke-opacity="0.25"/>
+<text x="{x0+234}" y="{y0+57:.1f}" font-family="{FONT}" font-size="17" fill="{INK}" fill-opacity="0.8" letter-spacing="4">全为具身</text>
+<text x="{x0}" y="{t1:.1f}" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">为物理 AI</text>
+<text x="{x0}" y="{t2:.1f}" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">打造硬件与数据</text>
+<line x1="{x0+2}" y1="{ul:.1f}" x2="{x0+164}" y2="{ul:.1f}" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round"/>
+<text x="{x0+2}" y="{en:.1f}" font-family="{FONT}" font-size="17" fill="{SUB}" letter-spacing="0.5">Hardware &amp; Data for Physical AI</text>
 </g>
 </svg>
 """
