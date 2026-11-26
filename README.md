@@ -6,9 +6,9 @@
 
 </div>
 
-OMNI-X 全为具身为具身智能团队做数据采集与遥操作硬件：关节模组、力传感、主控臂和数据系统。让机器人从人手的示范里学会做事。
+OMNI-X 全为具身，业务涵盖关节模组、力传感、机器人，以及遥操作与数据采集，致力于推动具身智能进入真实物理世界。
 
-OMNI-X builds teleoperation and data-collection hardware for embodied AI: joint modules, force sensing, leader arms and the data pipeline behind them.
+OMNI-X's business covers joint modules, force sensing, robots, and teleoperation and data-collection systems, advancing embodied intelligence in the physical world.
 
 <table>
 <tr>
