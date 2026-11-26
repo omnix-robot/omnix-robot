@@ -2,7 +2,7 @@
 
 用法: python -I tools/make_hero.py
 输出:
-  assets/hero.svg                   纸白素描主视觉卡（明暗模式共用）
+  assets/hero-v2.svg                   纸白素描主视觉卡（明暗模式共用）
   assets/icon-<名>-{light,dark}.svg  社交图标
 """
 import base64
@@ -90,8 +90,8 @@ def icon(name: str, color: str) -> str:
 
 
 if __name__ == "__main__":
-    (ASSETS / "hero.svg").write_text(hero(), encoding="utf-8")
+    (ASSETS / "hero-v2.svg").write_text(hero(), encoding="utf-8")
     for n in ICONS:
         for theme, c in ICON_COLORS.items():
             (ASSETS / f"icon-{n}-{theme}.svg").write_text(icon(n, c), encoding="utf-8")
-    print("hero.svg", (ASSETS / "hero.svg").stat().st_size, "bytes")
+    print("hero-v2.svg", (ASSETS / "hero-v2.svg").stat().st_size, "bytes")
