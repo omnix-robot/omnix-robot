@@ -56,14 +56,6 @@ def hero() -> str:
     disp_h = ih * disp_w / iw
     ix, iy = W - disp_w - 24, (H - disp_h) / 2 + 6
     s = 200 / 3898
-    specs = [("双向力反馈", "主从同构"), ("&lt;20 ms", "本地往返"), ("&lt;50 ms", "公网往返"), ("重力补偿", "悬停无漂移")]
-    spec_svg, x = [], 74
-    for i, (a_, b_) in enumerate(specs):
-        if i:
-            spec_svg.append(f'<line x1="{x-16}" y1="438" x2="{x-16}" y2="474" stroke="{INK}" stroke-opacity="0.18"/>')
-        spec_svg.append(f'<text x="{x}" y="454" font-family="{FONT}" font-size="17" font-weight="600" fill="{INK}">{a_}</text>')
-        spec_svg.append(f'<text x="{x}" y="474" font-family="{FONT}" font-size="12" fill="{SUB}">{b_}</text>')
-        x += 112 if i == 0 else 96
     return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="OMNI-X 全为具身：为物理 AI 打造硬件与数据">
 <defs><clipPath id="card"><rect width="{W}" height="{H}" rx="16"/></clipPath></defs>
 <g clip-path="url(#card)">
@@ -78,11 +70,6 @@ def hero() -> str:
 <text x="72" y="300" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">打造硬件与数据</text>
 {pencil(74, 236, 318, 3, color=ACCENT, op=0.9, w=2.2)}
 <text x="74" y="356" font-family="{FONT}" font-size="17" fill="{SUB}" letter-spacing="0.5">Hardware &amp; Data for Physical AI</text>
-<text x="74" y="412" font-family="{FONT}" font-size="12" font-weight="600" fill="{ACCENT}" letter-spacing="2.5">OMNILINK PRO · 双向力反馈主控臂</text>
-{''.join(spec_svg)}
-{pencil(40, W-40, 522, 11, op=0.22)}
-<text x="74" y="546" font-family="{FONT}" font-size="12" fill="{SUB}" letter-spacing="1">关节模组 · 力传感 · 数采系统 · 机器人</text>
-<text x="{W-74}" y="546" text-anchor="end" font-family="{FONT}" font-size="12" fill="{SUB}" letter-spacing="1">omnix-robot.com</text>
 </g>
 </svg>
 """
