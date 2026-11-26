@@ -66,7 +66,7 @@ def hero() -> str:
 <text x="306" y="119" font-family="{FONT}" font-size="17" fill="{INK}" fill-opacity="0.8" letter-spacing="4">全为具身</text>
 <text x="72" y="240" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">为物理 AI</text>
 <text x="72" y="300" font-family="{FONT}" font-size="46" font-weight="700" fill="{INK}" letter-spacing="2">打造硬件与数据</text>
-{pencil(74, 236, 318, 3, color=ACCENT, op=0.9, w=2.2)}
+<line x1="74" y1="318" x2="236" y2="318" stroke="{ACCENT}" stroke-width="2.2" stroke-linecap="round"/>
 <text x="74" y="356" font-family="{FONT}" font-size="17" fill="{SUB}" letter-spacing="0.5">Hardware &amp; Data for Physical AI</text>
 </g>
 </svg>
