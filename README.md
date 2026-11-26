@@ -7,11 +7,13 @@
 
 <br>
 
-<a href="https://www.omnix-robot.com/"><img src="https://img.shields.io/badge/官网-omnix--robot.com-182124?style=flat-square" alt="官网"></a>
-<a href="https://space.bilibili.com/1228002133"><img src="https://img.shields.io/badge/bilibili-全为具身-182124?style=flat-square&logo=bilibili&logoColor=white" alt="bilibili"></a>
-<a href="https://www.linkedin.com/company/omnix-robot/"><img src="https://img.shields.io/badge/LinkedIn-OMNI--X-182124?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="https://x.com/omnix_robot"><img src="https://img.shields.io/badge/X-@omnix__robot-182124?style=flat-square&logo=x&logoColor=white" alt="X"></a>
-<a href="mailto:business@omnix-robot.com"><img src="https://img.shields.io/badge/商务合作-business@omnix--robot.com-9a5a12?style=flat-square" alt="商务合作"></a>
+[![官网](https://img.shields.io/badge/官网-9a5a12?style=flat&logo=googlechrome&logoColor=white)](https://www.omnix-robot.com/)
+[![bilibili](https://img.shields.io/badge/-bilibili-fb7299?style=flat&labelColor=fb7299&logo=bilibili&logoColor=white)](https://space.bilibili.com/1228002133)
+[![抖音](https://img.shields.io/badge/抖音-000000?style=flat&logo=tiktok&logoColor=white)](https://www.douyin.com/user/MS4wLjABAAAA3cGaMCp_anPmZbYBtItgxpqXoFfWbyUXEG76dVvuGQcqTYpkc3wDr0AlN9MQtLDu)
+[![小红书](https://img.shields.io/badge/小红书-ff2442?style=flat&logo=xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/6a90f3b2000000001302200a)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=flat&logoColor=white)](https://www.linkedin.com/company/omnix-robot/)
+[![X](https://img.shields.io/badge/-white?style=flat&logo=x&logoColor=black&labelColor=white&color=white)](https://x.com/omnix_robot)
+[![Email](https://img.shields.io/badge/Email-c14438?style=flat&logo=maildotru&logoColor=white)](mailto:business@omnix-robot.com)
 
 </div>
 
@@ -62,8 +64,6 @@
 | **低时延链路** | 本地往返 **< 20 ms**，公网往返 **< 50 ms**。 |
 | **两种形态** | 桌面式适合固定工位精细作业；穿戴式适合大范围动作与移动采集。 |
 | **全程重力补偿** | 主臂在任意位置松手即停、悬停无漂移，长时间示范也能保持数据一致。 |
-
-> 力数据只在采集当下产生，事后补不了。
 
 ---
 
