@@ -27,13 +27,11 @@ def logo_paths(fill: str) -> str:
     return "\n".join(re.sub(r'fill="[^"]*"', f'fill="{fill}"', p) for p in re.findall(r"<path\b.*?/>", src, flags=re.S))
 
 
-def sketch_data_uri(target_w: int) -> tuple[str, int, int]:
-    im = Image.open(TOOLS / "robot-sketch.webp").convert("RGBA")
-    s = target_w / im.width
-    im = im.resize((target_w, round(im.height * s)), Image.LANCZOS)
-    buf = io.BytesIO()
-    im.save(buf, "WEBP", quality=78)
-    return "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode(), im.width, im.height
+def sketch_data_uri() -> tuple[str, int, int]:
+    """直接内嵌官网素描原图（不缩放、不重新编码）。"""
+    raw = (TOOLS / "robot-sketch.webp").read_bytes()
+    w, h = Image.open(io.BytesIO(raw)).size
+    return "data:image/webp;base64," + base64.b64encode(raw).decode(), w, h
 
 
 def pencil(x0, x1, y, seed, amp=0.9, color=INK, op=0.55, w=1.0):
@@ -51,7 +49,7 @@ def pencil(x0, x1, y, seed, amp=0.9, color=INK, op=0.55, w=1.0):
 def hero() -> str:
     W, H = 1280, 560
     PAPER, SUB = "#f3f3ef", "#6b7275"
-    uri, iw, ih = sketch_data_uri(1300)
+    uri, iw, ih = sketch_data_uri()
     disp_w = 760
     disp_h = ih * disp_w / iw
     ix, iy = W - disp_w - 24, (H - disp_h) / 2 + 6
