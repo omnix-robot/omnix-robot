@@ -30,4 +30,4 @@ OMNI-X's business covers joint modules, force sensing, robots, and teleoperation
 </tr>
 </table>
 
-<sub>商务合作 [business@omnix-robot.com](mailto:business@omnix-robot.com) · 技术支持 [support@omnix-robot.com](mailto:support@omnix-robot.com) · [预约演示](https://www.omnix-robot.com/contact) · [加入我们](https://www.omnix-robot.com/careers)</sub>
+<sub>商务合作 [business@omnix-robot.com](mailto:business@omnix-robot.com) · 技术支持 [support@omnix-robot.com](mailto:support@omnix-robot.com)</sub>
