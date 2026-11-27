@@ -45,6 +45,18 @@ Inverse kinematics for cross-robot teleoperation. Maps master joint angles to 6-
 <a href="https://github.com/omnix-robot/poinsot">GitHub</a> · <a href="https://github.com/omnix-robot/poinsot#readme">中文文档</a> · <a href="https://github.com/omnix-robot/poinsot/blob/main/README.en.md">English docs</a>
 </td>
 </tr>
+<tr>
+<td width="120" align="center" valign="middle">
+<a href="https://github.com/omnix-robot/omnilink_lite_sdk"><img src="assets/omnilink-lite-teaser.webp" alt="OmniLink Lite" width="96"></a>
+</td>
+<td valign="middle">
+<b>OMNILINK LITE SDK</b><br>
+通过 USB 读取双臂各 7 轴关节角和编码器诊断，支持设备零位管理，并提供 LeRobot 遥操作示例。<br>
+Read joint angles and encoder diagnostics for both seven-axis leader arms over USB. Includes zero calibration and a LeRobot teleoperation example.<br>
+<sub>Python · C++17 · Apache 2.0</sub><br>
+<a href="https://github.com/omnix-robot/omnilink_lite_sdk">GitHub</a> · <a href="https://github.com/omnix-robot/omnilink_lite_sdk#快速上手">快速上手</a>
+</td>
+</tr>
 </table>
 
 <sub>商务合作 [business@omnix-robot.com](mailto:business@omnix-robot.com) · 技术支持 [support@omnix-robot.com](mailto:support@omnix-robot.com)</sub>
