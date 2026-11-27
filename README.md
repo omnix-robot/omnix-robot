@@ -30,4 +30,21 @@ OMNI-X's business covers joint modules, force sensing, robots, and teleoperation
 </tr>
 </table>
 
+## 开源项目 · Open source
+
+<table>
+<tr>
+<td width="120" align="center" valign="middle">
+<a href="https://github.com/omnix-robot/poinsot"><img src="assets/poinsot-logo.svg" alt="Poinsot" width="96"></a>
+</td>
+<td valign="middle">
+<b>Poinsot</b><br>
+面向异构机械臂的遥操作逆运动学库。基于 URDF 将主臂关节角实时映射到不同构型的 6 轴或 7 轴从臂。<br>
+Inverse kinematics for cross-robot teleoperation. Maps master joint angles to 6- or 7-axis follower arms in real time using URDF models.<br>
+<sub>Python · C99 · Apache 2.0</sub><br>
+<a href="https://github.com/omnix-robot/poinsot">GitHub</a> · <a href="https://github.com/omnix-robot/poinsot#readme">中文文档</a> · <a href="https://github.com/omnix-robot/poinsot/blob/main/README.en.md">English docs</a>
+</td>
+</tr>
+</table>
+
 <sub>商务合作 [business@omnix-robot.com](mailto:business@omnix-robot.com) · 技术支持 [support@omnix-robot.com](mailto:support@omnix-robot.com)</sub>
