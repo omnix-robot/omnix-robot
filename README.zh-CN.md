@@ -4,7 +4,7 @@
 
 <a href="https://www.omnix-robot.com/about"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/statement-zh-dark.webp"><img src="assets/statement-zh-light.webp" width="100%" alt="我们的业务涵盖关节模组、力传感、数采系统与机器人。我们把电机、力控与感知做成机器人的器官，再用人手的示范为它积累数据，让 AI 用自己的身体感知真实世界，在使用中自我迭代。公司位于东莞松山湖。"></picture></a>
 
-<a href="https://www.omnix-robot.com/omnilink"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-products-zh-dark.webp"><img src="assets/head-products-zh-light.webp" width="100%" alt="OmniLink 产品系列"></picture></a>
+<a href="https://www.omnix-robot.com/products"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/head-products-zh-dark.webp"><img src="assets/head-products-zh-light.webp" width="100%" alt="OmniLink 产品系列"></picture></a>
 
 <a href="https://www.omnix-robot.com/omnilink/pro"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-pro-zh-dark.webp"><img src="assets/card-pro-zh-light.webp" width="33%" alt="OmniLink Pro：双向力反馈主控臂，用于遥操作与力觉数据采集。"></picture></a><a href="https://www.omnix-robot.com/omnilink/lite"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-lite-zh-dark.webp"><img src="assets/card-lite-zh-light.webp" width="33%" alt="OmniLink Lite，即将揭幕：轻量编码器主控臂，适配批量采集与产线示教。"></picture></a><a href="https://www.omnix-robot.com/products"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-pipe-zh-dark.webp"><img src="assets/card-pipe-zh-light.webp" width="33%" alt="OmniPipe，即将推出：采集即标注即质检，贯通数据到模型的闭环。"></picture></a>
 
